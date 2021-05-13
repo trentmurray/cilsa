@@ -23,13 +23,6 @@ def render_initial_data(request):
     }
     return render(request, "products/product_create.html", context)
 
-def dynamic_lookup_view(request):
-    obj = Product.objects.get(id=1)
-    context = {
-
-    }
-    return render(request, "products/product_detail.html", context)
-
 """ def product_create_view(request):
     my_form = RawProducForm()
     if request.method == "POST":
